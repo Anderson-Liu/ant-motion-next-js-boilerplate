@@ -16,11 +16,13 @@ npm run dev
 ```
 
 ## Feature
+
 - Support custom less
 - Suppport custom component with jsx
 - Support custom image in local path
 - Support fetch data from local file and remote server
 - Support render props data to result html file.
+- Support simple router and link navigation.
 
 ## Screenshot
 

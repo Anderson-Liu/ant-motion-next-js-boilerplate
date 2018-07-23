@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
 
+import Link, { prefetch } from '../../components/Link/index';
+
 const Item = Menu.Item;
 
 class Header extends React.Component {
@@ -23,11 +25,13 @@ class Header extends React.Component {
     const props = { ...this.props };
     const isMobile = props.isMobile;
     delete props.isMobile;
-    const navData = { menu1: 'Index', menu2: 'Menu1', menu3: 'Menu2', menu4: 'Menu3' };
-    const linkList = ['/', '/#leader_board_lock', "/exampleData", "/"];
+    const navData = { menu1: 'Index', menu2: 'Article_1', menu3: 'Article_2', menu4: 'Article_3' };
+    const linkList = ['0', '1', "2", "3"];
     const navChildren = Object.keys(navData)
       .map((key, i) => (<Item key={i}>
-        <a href={linkList[i]}>{navData[key]}</a>
+          <Link href={`/article?id=${linkList[i]}`} prefetch withData>
+              <a>{`Article ${linkList[i]}` } </a>
+          </Link>
       </Item>));
     return (<TweenOne
       component="header"

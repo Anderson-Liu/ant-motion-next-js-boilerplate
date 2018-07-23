@@ -9,7 +9,6 @@ import { exampleData } from '../models/data';
 import Footer from '../components/Footer/index';
 
 
-
 let isMobile = false;
 enquireScreen((b) => {
     isMobile = b;
