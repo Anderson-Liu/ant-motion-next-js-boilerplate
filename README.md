@@ -2,10 +2,6 @@
 
 An quick start boilerplate for [ant motion](https://motion.ant.design/) + [next.js](https://github.com/zeit/next.js/).
 
-## Preview
-
-[Online Demo](https://ant-motion-nextjs-boilerplate-aztvfnikrz.now.sh/)
-
 ## Quick start
 
 ```bash
