@@ -1,0 +1,59 @@
+@import './custom.less';
+
+.footer {
+  background:linear-gradient(to bottom, #031D6A, #000E48);
+  color: #fff;
+}
+.footer-wrap {
+  padding: 72px 24px 144px;
+  .footer-item {
+    display: inline-block;
+    text-align: left;
+    h2 {
+      margin-bottom: 24px;
+      color: #fff;
+      font-size: 16px;
+    }
+    div {
+      margin-bottom: 12px;
+      font-size: 14px;
+      a {
+        color: rgba(256, 256, 256, 0.9);
+      }
+    }
+  }
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 21px 0;
+  line-height: 22px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.6);
+  a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@footer: footer0;
+.@{footer} {
+  background-color: @template-bg-color;
+  text-align: center;
+  height: 80px;
+  color: @template-footer-text-color;
+  overflow: hidden;
+  position: relative;
+  span {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{footer} {
+    > div {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
